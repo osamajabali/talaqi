@@ -1,0 +1,14 @@
+<div class="row text-primary text-center m-0 mt-5">
+    <h3>Our Digital Transformation Services</h3>
+</div>
+
+<div class="row">
+    @for (service of services; track $index) {
+    <div class="col=md-6 col-12 px-5 py-3">
+        <div class="image-container">
+            <img [src]="service.image" class="services" alt="{{ service.title }}">
+            <!-- <div class="image-title">{{ service.title }}</div> -->
+        </div>
+    </div>
+    }
+</div>

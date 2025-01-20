@@ -1,0 +1,34 @@
+<div class="row m-0 mt-5">
+  <div class="col-12 text-center">
+    Your Partner on Your Digital Transformation Journey
+  </div>
+  <div class="col-12 my-3 text-center">
+    <h3>
+      <span class="talaqi">Talaqi</span> at a Glance
+    </h3>
+  </div>
+
+  <!-- <div class="col-3 p-0 m-0 talaqi-img-bg">
+    <img src="../../assets/images/talaqi-glance.jpeg" width="100%" height="100%" alt="">
+  </div> -->
+  <div class="col-12 row p-0 m-0 bg-black">
+    <div class="nav-container">
+      <ul class="nav col-12 p-3">
+        @for (item of navItems; track $index) {
+        <li class="nav-item px-2">
+          <a class="nav-link btn" [class.active]="item === selectedItem" (click)="selectItem(item)">
+            {{ item.label }}
+          </a>
+        </li>
+        }
+      </ul>
+
+      <div class="col-12 p-3 text-white">
+        {{ selectedText }}
+      </div>
+    </div>
+
+
+  </div>
+
+</div>

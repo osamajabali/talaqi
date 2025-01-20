@@ -1,0 +1,12 @@
+.navbar {
+    border-bottom: 2px solid #26bbdf; // Blue bottom border
+}
+
+.nav-link{
+    color: #26bbdf ;
+    font-weight: 400;
+
+    &:hover{
+        color: black;
+    }
+}
